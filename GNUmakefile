@@ -1,14 +1,15 @@
 #################################################################################
-# @brief makefile template
-# @date  first edit   : 2016/02/16
-# @date  last updated : 2018/04/27
+# @brief       makefile template
+# @reference   thanks to http://urin.github.io/posts/2013/simple-makefile-for-clang
+# @date        first edit   : 2016/02/16
+# @date        last updated : 2018/04/27
 #################################################################################
 
 
 
 CC      = clang++
 
-CFLAGS  = -std=c++1z -O4 -flto
+CFLAGS  = -g -MMD -MP -std=c++1z
 WARNS   = -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic
 
 LDFLAGS = 
