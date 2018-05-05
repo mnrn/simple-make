@@ -28,7 +28,6 @@ ifeq "$(strip $(OBJDIR))" ""
 	OBJDIR = .
 endif
 OBJS    = $(addprefix $(OBJDIR)/, $(notdir $(SRCS:.cpp=.o)))
-
 DEPENDS = $(OBJS:.o=.d)
 
 
