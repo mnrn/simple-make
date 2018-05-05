@@ -14,19 +14,13 @@ WARNS   = -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic -Werror
 
 LDFLAGS = 
 LIBS    = 
-INC     = -I./include
+INCS    = -I./include
 TARGET  = ./bin/$(shell basename `readlink -f .`)
 
 SRCDIR  = ./src
-ifeq "$(strip $(SRCDIR))" ""
-	SRCDIR = .
-endif
 SRCS    = $(wildcard $(SRCDIR)/*.cpp)
 
 OBJDIR  = ./obj
-ifeq "$(strip $(OBJDIR))" ""
-	OBJDIR = .
-endif
 OBJS = $(addprefix $(OBJDIR)/, $(notdir $(SRCS:.cpp=.o)))
 DEPS = $(OBJS:.o=.d)
 
@@ -35,8 +29,7 @@ $(TARGET): $(OBJS) $(LIBS)
 	$(CC) -o $@ $^ $(LDFLAGS)
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.cpp
-	-mkdir -p $(OBJDIR)
-	$(CC) -o $@ -c $< $(INC) $(CFLAGS) $(WARNS)
+	$(CC) -o $@ -c $< $(INCS) $(CFLAGS) $(WARNS)
 
 all: clean $(TARGET)
 

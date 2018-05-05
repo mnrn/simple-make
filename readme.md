@@ -1,4 +1,4 @@
-# Building a simple makefile environment.
+# Building a simple C/C++ environment.
 
 ### Thanks
 This repository was created with reference to [http://urin.github.io/posts/2013/simple-makefile-for-clang](http://urin.github.io/posts/2013/simple-makefile-for-clang)
@@ -50,4 +50,4 @@ example
 　　　'-- example.cpp
 ```
 
-If you can read Japanese and want more details, please see [http://urin.github.io/posts/2013/simple-makefile-for-clang](http://urin.github.io/posts/2013/simple-makefile-for-clang)
+If you can read Japanese and need more details, please see [http://urin.github.io/posts/2013/simple-makefile-for-clang](http://urin.github.io/posts/2013/simple-makefile-for-clang)
