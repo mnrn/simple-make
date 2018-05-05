@@ -27,8 +27,8 @@ OBJDIR  = ./obj
 ifeq "$(strip $(OBJDIR))" ""
 	OBJDIR = .
 endif
-OBJS    = $(addprefix $(OBJDIR)/, $(notdir $(SRCS:.cpp=.o)))
-DEPENDS = $(OBJS:.o=.d)
+OBJS = $(addprefix $(OBJDIR)/, $(notdir $(SRCS:.cpp=.o)))
+DEPS = $(OBJS:.o=.d)
 
 
 $(TARGET): $(OBJS) $(LIBS)
@@ -41,7 +41,7 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.cpp
 all: clean $(TARGET)
 
 clean:
-	rm -f $(TARGET) $(OBJS) $(DEPENDS)
+	rm -f $(TARGET) $(OBJS) $(DEPS)
 
--include $(DEPENDS)
+-include $(DEPS)
 

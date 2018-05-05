@@ -1,4 +1,4 @@
-# Building a simple environment with makefile.
+# Building a simple makefile environment.
 
 ### Thanks
 This repository was created with reference to [http://urin.github.io/posts/2013/simple-makefile-for-clang](http://urin.github.io/posts/2013/simple-makefile-for-clang)
@@ -6,7 +6,7 @@ This repository was created with reference to [http://urin.github.io/posts/2013/
 
 ### Overview
 Please use it when you want to try C/C++ easily.<br>
- You can easily use C/C++ by using this makefile, if you do not assume complex directory structure.
+You can easily use C/C++ by using this makefile, if you do not assume complex directory structure.
 
 
 ### Demo
@@ -44,8 +44,8 @@ example
 |-- include
 |　　'-- example.h
 |-- obj
-|　　|-- example.d <- (DEPENDS) depfile 
-|　　'-- example.o <- (OBJECTS) object file
+|　　|-- example.d <- (DEPS) depend file 
+|　　'-- example.o <- (OBJS) object file
 '-- src
 　　　'-- example.cpp
 ```
