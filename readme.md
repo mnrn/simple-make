@@ -5,7 +5,7 @@ This repository was created with reference to [http://urin.github.io/posts/2013/
 
 
 ### Overview
-<strong>Please use it when you want to try C/C++ easily.</strong><br>
+Please use it when you want to try C/C++ easily.<br>
  You can easily use C/C++ by using this makefile, if you do not assume complex directory structure.
 
 
