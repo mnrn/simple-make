@@ -18,17 +18,17 @@ INCS    = -I./include
 TARGET  = ./bin/$(shell basename `readlink -f .`)
 
 SRCDIR  = ./src
-SRCS    = $(wildcard $(SRCDIR)/*.cpp)
+SRCS    = $(wildcard $(SRCDIR)/*.cc)
 
 OBJDIR  = ./obj
-OBJS = $(addprefix $(OBJDIR)/, $(notdir $(SRCS:.cpp=.o)))
+OBJS = $(addprefix $(OBJDIR)/, $(notdir $(SRCS:.cc=.o)))
 DEPS = $(OBJS:.o=.d)
 
 
 $(TARGET): $(OBJS) $(LIBS)
 	$(CC) -o $@ $^ $(LDFLAGS)
 
-$(OBJDIR)/%.o: $(SRCDIR)/%.cpp
+$(OBJDIR)/%.o: $(SRCDIR)/%.cc
 	$(CC) -o $@ -c $< $(INCS) $(CFLAGS) $(WARNS)
 
 all: clean $(TARGET)
