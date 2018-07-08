@@ -9,7 +9,7 @@
 
 CC      = clang++
 
-CFLAGS  = -g -MMD -MP -std=c++1z
+CFLAGS  = -g -MMD -MP -std=c++17
 WARNS   = -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic -Werror
 
 LDFLAGS = 
