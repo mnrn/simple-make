@@ -1,15 +1,13 @@
 # Building a simple C/C++ environment.
 
-### Thanks
+## Thanks
 
 This repository was created with reference to [http://urin.github.io/posts/2013/simple-makefile-for-clang](http://urin.github.io/posts/2013/simple-makefile-for-clang)
 
-
 ### Overview
 
-Please use it when you want to try C/C++ easily.<br>
+Please use it when you want to try C/C++ easily.  
 You can easily use C/C++ by using this makefile, if you do not assume complex directory structure.
-
 
 ### Demo
 
@@ -44,12 +42,12 @@ example
 |-- init.sh
 |-- makefile
 |-- bin
-|　　'-- example <- execute file
+|　　`-- example <- execute file
 |-- include
-|　　'-- example.h
+|　　`-- example.h
 |-- obj
 |　　|-- example.d <- dependency file 
-|　　'-- example.o <- object file
+|　　`-- example.o <- object file
 '-- src
-　　　'-- example.cpp
+　　　`-- example.cpp
 ```
