@@ -19,8 +19,8 @@ init.sh  makefile
 $ sh init.sh
 $ ls
 bin  include  init.sh  makefile  obj  src
-$ vim ./src/hello.cpp
-$ cat ./src/hello.cpp
+$ vim ./src/hello.cc
+$ cat ./src/hello.cc
 #include <iostream>
 
 int main()
@@ -49,5 +49,5 @@ example
 |　　|-- example.d <- dependency file 
 |　　`-- example.o <- object file
 '-- src
-　　　`-- example.cpp
+　　　`-- example.cc
 ```
