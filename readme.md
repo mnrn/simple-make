@@ -46,7 +46,7 @@ example
 |-- include
 |　　`-- example.h
 |-- obj
-|　　|-- example.d <- dependency file 
+|　　|-- example.d <- dependency file
 |　　`-- example.o <- object file
 '-- src
 　　　`-- example.cc
