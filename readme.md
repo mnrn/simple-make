@@ -48,6 +48,6 @@ example
 |-- obj
 |　　|-- example.d <- dependency file
 |　　`-- example.o <- object file
-'-- src
+`-- src
 　　　`-- example.cc
 ```
