@@ -6,8 +6,8 @@ This repository was created with reference to [http://urin.github.io/posts/2013/
 
 ### Overview
 
-Please use it when you want to try C++ easily.  
-You can easily use C++ by using this makefile, if you do not assume complex directory structure.
+Please use it when you want to write C++ easily.  
+You can easily build C++ by using this makefile, if you do not assume complex directory structure.
 
 ### Demo
 
